@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!--
+    ============================================================
+    PORTFÓLIO PESSOAL - LUIZ GUILHERME PENEDO PINTO
+    Atividade Prática - Fundamentos da Programação Web
+    Estrutura: Single Page Website com navegação por âncoras
+    Tecnologias: HTML5, CSS3 (sem frameworks), JavaScript puro
+    Arquivo: index.html — estrutura e conteúdo da página
+    ============================================================
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luiz Guilherme | Portfólio</title>
+
+  <!-- Google Fonts: Syne (display) + DM Sans (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Folha de estilos externa -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVEGAÇÃO PRINCIPAL (fixa em todas as seções)
+       Âncoras: #sobre, #formacao, #portfolio, #contato
+  ============================================================ -->
+  <nav aria-label="Menu principal">
+    <!-- Logo / nome resumido -->
+    <span class="nav-logo">LG<span>.</span></span>
+
+    <!-- Links de navegação por âncoras -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#sobre"     class="nav-link">Sobre mim</a></li>
+      <li><a href="#formacao"  class="nav-link">Formação</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+      <li><a href="#contato"   class="nav-link">Contato</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <!-- Botão alternância de tema claro / escuro -->
+      <button id="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">🌙</button>
+      <!-- Botão hamburguer (mobile) -->
+      <button id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       CONTEÚDO PRINCIPAL
+  ============================================================ -->
+  <main>
+
+    <!-- ====================================================
+         SEÇÃO 1 — SOBRE MIM
+    ==================================================== -->
+    <section id="sobre">
+      <div class="hero-inner fade-up">
+        <div>
+          <!-- Apresentação breve -->
+          <p class="hero-eyebrow">Olá, eu sou</p>
+          <h1 class="hero-name">Luiz<br><em>Guilherme</em></h1>
+          <p class="hero-role">Estudante de Ciência da Computação &amp; Técnico em TI</p>
+
+          <!-- Descrição pessoal -->
+          <p class="hero-desc">
+            Sou apaixonado por tecnologia, com foco em suporte técnico, hardware e infraestrutura.
+            Estou em formação no curso de Ciência da Computação (UNINTER) e Técnico em Informática
+            (EETEPA). Busco constantemente aprender e resolver problemas técnicos com eficiência.
+          </p>
+
+          <!-- Informações de contato rápido -->
+          <div class="hero-info">
+            <span class="info-chip"><span class="ic">📍</span> Marituba, PA</span>
+            <span class="info-chip"><span class="ic">📞</span> (91) 98546-9833</span>
+            <a href="mailto:luizpinto82@gmail.com" class="info-chip">
+              <span class="ic">✉️</span> luizpinto82@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/luiz-guilherme-penedo-pinto" target="_blank" class="info-chip">
+              <span class="ic">🔗</span> LinkedIn
+            </a>
+          </div>
+
+          <!-- Hobbies e interesses -->
+          <p class="hobbies-label">Interesses</p>
+          <div class="hobbies-row">
+            <span class="tag">⚙️ Hardware</span>
+            <span class="tag">🌐 Redes</span>
+            <span class="tag">🐧 Linux</span>
+            <span class="tag">💻 Suporte TI</span>
+            <span class="tag">📚 Aprendizado contínuo</span>
+            <span class="tag">🔧 Manutenção</span>
+          </div>
+        </div>
+
+        <!-- Inicial do nome como avatar -->
+        <div class="avatar-box" aria-hidden="true">LG</div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         SEÇÃO 2 — FORMAÇÃO
+    ==================================================== -->
+    <section id="formacao">
+      <p class="section-label fade-up">Trajetória</p>
+      <h2 class="section-title fade-up">Formação &amp; Educação</h2>
+
+      <!-- Linha do tempo acadêmica -->
+      <div class="timeline">
+
+        <div class="tl-item fade-up">
+          <div class="tl-year">2025<br>→ 2029</div>
+          <div class="tl-body">
+            <p class="tl-title">Bacharelado em Ciência da Computação</p>
+            <p class="tl-inst">UNINTER — Centro Universitário Internacional</p>
+            <span class="tag">Em andamento</span>
+          </div>
+        </div>
+
+        <div class="tl-item fade-up">
+          <div class="tl-year">2025<br>→ 2026</div>
+          <div class="tl-body">
+            <p class="tl-title">Técnico em Informática</p>
+            <p class="tl-inst">EETEPA Vilhena Alves</p>
+            <span class="tag">Em andamento</span>
+          </div>
+        </div>
+
+        <div class="tl-item fade-up">
+          <div class="tl-year">2024</div>
+          <div class="tl-body">
+            <p class="tl-title">Técnico em Mecânica</p>
+            <p class="tl-inst">SENAI</p>
+            <span class="tag">Concluído</span>
+          </div>
+        </div>
+
+        <div class="tl-item fade-up">
+          <div class="tl-year">2024</div>
+          <div class="tl-body">
+            <p class="tl-title">Assistente de Informática</p>
+            <p class="tl-inst">SENAI — Certificação</p>
+            <span class="tag">Certificado</span>
+          </div>
+        </div>
+
+        <div class="tl-item fade-up">
+          <div class="tl-year">2020</div>
+          <div class="tl-body">
+            <p class="tl-title">Hardware: Montagem e Manutenção de Computadores</p>
+            <p class="tl-inst">ALS Treinamentos</p>
+            <span class="tag">Certificado</span>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+      <!-- Cards de habilidades -->
+      <div class="skills-grid">
+
+        <div class="skill-card fade-up">
+          <p class="skill-card-title">🛠 Habilidades Técnicas</p>
+          <div class="skill-tags">
+            <span class="tag">Suporte TI</span>
+            <span class="tag">Hardware</span>
+            <span class="tag">Diagnóstico</span>
+            <span class="tag">Windows</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Redes TCP/IP</span>
+            <span class="tag">Cabeamento RJ-45</span>
+            <span class="tag">Pacote Office</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up">
+          <p class="skill-card-title">🌐 Idiomas</p>
+          <div class="lang-bar">
+            <div class="lang-row">
+              <span class="lang-name">Português</span>
+              <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+              <span class="lang-level">Nativo</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Inglês</span>
+              <div class="bar-track"><div class="bar-fill" style="width:22%"></div></div>
+              <span class="lang-level">A1–A2 (em curso)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up">
+          <p class="skill-card-title">🤝 Perfil Profissional</p>
+          <div class="skill-tags">
+            <span class="tag">Proativo</span>
+            <span class="tag">Organizado</span>
+            <span class="tag">Trabalho em equipe</span>
+            <span class="tag">Boa comunicação</span>
+            <span class="tag">Aprendizado rápido</span>
+          </div>
+        </div>
+
+      </div><!-- /skills-grid -->
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         SEÇÃO 3 — PORTFÓLIO
+    ==================================================== -->
+    <section id="portfolio">
+      <p class="section-label fade-up">Trabalhos</p>
+      <h2 class="section-title fade-up">Portfólio &amp; Projetos</h2>
+
+      <div class="projects-grid">
+
+        <article class="proj-card fade-up">
+          <div class="proj-icon">🖥️</div>
+          <h3 class="proj-title">Manutenção e Diagnóstico de Computadores</h3>
+          <p class="proj-desc">
+            Diagnóstico, orçamento e manutenção de três desktops. Substituição de componentes,
+            otimização de desempenho, limpeza interna e testes de funcionamento.
+          </p>
+          <div class="proj-footer">
+            <div class="proj-tags">
+              <span class="tag">Hardware</span>
+              <span class="tag">Windows</span>
+              <span class="tag">Linux</span>
+            </div>
+            <a href="https://linkedin.com/in/luiz-guilherme-penedo-pinto" target="_blank" class="proj-link">Ver ↗</a>
+          </div>
+        </article>
+
+        <article class="proj-card fade-up">
+          <div class="proj-icon">🌐</div>
+          <h3 class="proj-title">Redes e Cabeamento Estruturado</h3>
+          <p class="proj-desc">
+            Práticas de infraestrutura de redes: crimpagem de RJ-45, testes de conectividade
+            e simulação de instalação em ambiente corporativo.
+          </p>
+          <div class="proj-footer">
+            <div class="proj-tags">
+              <span class="tag">TCP/IP</span>
+              <span class="tag">Cabeamento</span>
+              <span class="tag">RJ-45</span>
+            </div>
+            <a href="https://linkedin.com/in/luiz-guilherme-penedo-pinto" target="_blank" class="proj-link">Ver ↗</a>
+          </div>
+        </article>
+
+        <article class="proj-card fade-up">
+          <div class="proj-icon">🎨</div>
+          <h3 class="proj-title">Portfólio Pessoal — Este Site</h3>
+          <p class="proj-desc">
+            Desenvolvimento deste portfólio usando HTML5, CSS3 e JavaScript puro.
+            Single Page com navegação por âncoras, tema claro/escuro e formulário validado.
+          </p>
+          <div class="proj-footer">
+            <div class="proj-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <!-- Atualize com o link do seu GitHub Pages -->
+            <a href="https://github.com" target="_blank" class="proj-link">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="proj-card fade-up">
+          <div class="proj-icon">🔩</div>
+          <h3 class="proj-title">Auxiliar de Manutenção Industrial</h3>
+          <p class="proj-desc">
+            Experiência na Guimarães Nasser (out/2023 – jan/2024): manutenção preventiva e
+            corretiva de máquinas, organização de ferramentas e suporte à equipe técnica.
+          </p>
+          <div class="proj-footer">
+            <div class="proj-tags">
+              <span class="tag">Manutenção</span>
+              <span class="tag">Industrial</span>
+            </div>
+            <a href="https://linkedin.com/in/luiz-guilherme-penedo-pinto" target="_blank" class="proj-link">LinkedIn ↗</a>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         SEÇÃO 4 — CONTATO
+    ==================================================== -->
+    <section id="contato">
+      <p class="section-label fade-up">Fale comigo</p>
+      <h2 class="section-title fade-up">Contato</h2>
+
+      <div class="contact-wrap">
+
+        <!-- Informações de contato -->
+        <div class="contact-info fade-up">
+          <p>
+            Estou aberto a oportunidades de estágio ou posições júnior na área de TI.
+            Sinta-se à vontade para entrar em contato!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:luizpinto82@gmail.com" class="c-link">
+              <span class="ic">✉️</span> luizpinto82@gmail.com
+            </a>
+            <a href="tel:+5591985469833" class="c-link">
+              <span class="ic">📞</span> (91) 98546-9833
+            </a>
+            <a href="https://linkedin.com/in/luiz-guilherme-penedo-pinto" target="_blank" class="c-link">
+              <span class="ic">🔗</span> linkedin.com/in/luiz-guilherme-penedo-pinto
+            </a>
+            <span class="c-link">
+              <span class="ic">📍</span> São José – Marituba/PA
+            </span>
+          </div>
+        </div>
+
+        <!-- Formulário de contato (validação feita em script.js) -->
+        <form class="contact-form" id="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+            <span class="err-msg" id="err-nome">Por favor, informe seu nome.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" />
+            <span class="err-msg" id="err-email">Informe um e-mail válido (ex: usuario@dominio.com).</span>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            <span class="err-msg" id="err-mensagem">Por favor, escreva sua mensagem.</span>
+          </div>
+
+          <button type="submit" class="btn-send">Enviar mensagem →</button>
+
+        </form>
+      </div><!-- /contact-wrap -->
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <p>© 2025 Luiz Guilherme Penedo Pinto — HTML5, CSS3 &amp; JavaScript</p>
+  </footer>
+
+  <!-- ============================================================
+       MODAL DE CONFIRMAÇÃO DE ENVIO
+  ============================================================ -->
+  <div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-icon">✅</div>
+      <h3 class="modal-title" id="modal-title">Mensagem enviada!</h3>
+      <p class="modal-text">Obrigado pelo contato, Luiz responderá em breve.</p>
+      <button class="btn-modal-close" id="modal-close">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Script externo (deve vir antes do </body>) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
